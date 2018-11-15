@@ -5,15 +5,19 @@
   
 
   
-  <title>StrongRock</title>
+  <title>hexo首页不显示文章全部内容的设置方法 | StrongRock</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="StrongRock">
-<meta property="og:url" content="https://strongRock.github.io/index.html">
+  <meta name="description" content="初用Hexo，发现默认情况下，在博客的首页，文章内容是不折叠的，一整篇全部显示。这就起不到索引的作用了，而且看起来比较乱。 最初以为可以通过修改hexo的配置文件来实现文章折叠功能，但是在_config.yml中找了半天也没有发现配置参数，在官网同样没有相应的说明。不过百度一查，发现遇到类似的问题的网友不少，而且已经有人给出了解决方案。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo首页不显示文章全部内容的设置方法">
+<meta property="og:url" content="https://strongRock.github.io/2018-11-15/hexo首页不显示文章全部内容的设置方法/index.html">
 <meta property="og:site_name" content="StrongRock">
+<meta property="og:description" content="初用Hexo，发现默认情况下，在博客的首页，文章内容是不折叠的，一整篇全部显示。这就起不到索引的作用了，而且看起来比较乱。 最初以为可以通过修改hexo的配置文件来实现文章折叠功能，但是在_config.yml中找了半天也没有发现配置参数，在官网同样没有相应的说明。不过百度一查，发现遇到类似的问题的网友不少，而且已经有人给出了解决方案。">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-11-15T15:38:45.026Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="StrongRock">
+<meta name="twitter:title" content="hexo首页不显示文章全部内容的设置方法">
+<meta name="twitter:description" content="初用Hexo，发现默认情况下，在博客的首页，文章内容是不折叠的，一整篇全部显示。这就起不到索引的作用了，而且看起来比较乱。 最初以为可以通过修改hexo的配置文件来实现文章折叠功能，但是在_config.yml中找了半天也没有发现配置参数，在官网同样没有相应的说明。不过百度一查，发现遇到类似的问题的网友不少，而且已经有人给出了解决方案。">
   
     <link rel="alternate" href="/atom.xml" title="StrongRock" type="application/atom+xml">
   
@@ -60,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-hexo首页不显示文章全部内容的设置方法" class="article article-type-post" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="post-hexo首页不显示文章全部内容的设置方法" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018-11-15/hexo首页不显示文章全部内容的设置方法/" class="article-date">
   <time datetime="2018-11-15T15:31:23.000Z" itemprop="datePublished">2018-11-15</time>
@@ -75,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018-11-15/hexo首页不显示文章全部内容的设置方法/">hexo首页不显示文章全部内容的设置方法</a>
+    <h1 class="article-title" itemprop="name">
+      hexo首页不显示文章全部内容的设置方法
     </h1>
   
 
@@ -86,11 +88,10 @@
       
         <p>初用Hexo，发现默认情况下，在博客的首页，文章内容是不折叠的，一整篇全部显示。这就起不到索引的作用了，而且看起来比较乱。</p>
 <p>最初以为可以通过修改hexo的配置文件来实现文章折叠功能，但是在_config.yml中找了半天也没有发现配置参数，在官网同样没有相应的说明。不过百度一查，发现遇到类似的问题的网友不少，而且已经有人给出了解决方案。</p>
-        
-          <p class="article-more-link">
-            <a href="/2018-11-15/hexo首页不显示文章全部内容的设置方法/#more">Read More</a>
-          </p>
-        
+<a id="more"></a>
+<p>解决方案很简单，在博文中你希望被折叠的地方，加入以下html注释就好了：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure></p>
+<p>这么简单！吓的我赶紧试试，结果真的可以✌</p>
+
       
     </div>
     <footer class="article-footer">
@@ -100,97 +101,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-利用Hexo与github打造个人博客" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018-11-15/利用Hexo与github打造个人博客/" class="article-date">
-  <time datetime="2018-11-15T13:42:15.000Z" itemprop="datePublished">2018-11-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018-11-15/利用Hexo与github打造个人博客/">利用Hexo与github打造个人博客</a>
-    </h1>
+    <a href="/2018-11-15/利用Hexo与github打造个人博客/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">利用Hexo与github打造个人博客</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="第一步-注册github"><a href="#第一步-注册github" class="headerlink" title="第一步 注册github"></a>第一步 注册github</h2><p>在github上注册一个账号，当然，如果已经有了github账号则可以跳过这一步。</p>
-<h2 id="第二步-新建一个repository"><a href="#第二步-新建一个repository" class="headerlink" title="第二步 新建一个repository"></a>第二步 新建一个repository</h2><p>新的仓库的名字应为如下形式：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">账号名.github.io</span><br></pre></td></tr></table></figure>
-<p>进入当前仓库的<code>setting</code>页面，找到<strong>GitHub Pages</strong>，会发现一行提示：</p>
-        
-          <p class="article-more-link">
-            <a href="/2018-11-15/利用Hexo与github打造个人博客/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://strongRock.github.io/2018-11-15/利用Hexo与github打造个人博客/" data-id="cjoirezde0002nsvigguk8yhv" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018-11-15/hello-world/" class="article-date">
-  <time datetime="2018-11-15T13:25:48.194Z" itemprop="datePublished">2018-11-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018-11-15/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3>
-        
-          <p class="article-more-link">
-            <a href="/2018-11-15/hello-world/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://strongRock.github.io/2018-11-15/hello-world/" data-id="cjoirezd00000nsvivjk234a8" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
