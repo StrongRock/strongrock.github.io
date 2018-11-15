@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="StrongRock">
 <meta property="og:description" content="第一步 注册github在github上注册一个账号，当然，如果已经有了github账号则可以跳过这一步。 第二步 新建一个repository新的仓库的名字应为如下形式： 1账号名.github.io 进入当前仓库的setting页面，找到GitHub Pages，会发现一行提示：">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-15T15:22:59.235Z">
+<meta property="og:updated_time" content="2018-11-15T15:27:59.397Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="利用Hexo与github打造个人博客">
 <meta name="twitter:description" content="第一步 注册github在github上注册一个账号，当然，如果已经有了github账号则可以跳过这一步。 第二步 新建一个repository新的仓库的名字应为如下形式： 1账号名.github.io 进入当前仓库的setting页面，找到GitHub Pages，会发现一行提示：">
@@ -93,7 +93,7 @@
 <a id="more"></a>
 <p><em>Your site is published at <a href="https://strongrock.github.io/">https://strongrock.github.io/</a></em></p>
 <h2 id="第三步-配置本地环境"><a href="#第三步-配置本地环境" class="headerlink" title="第三步 配置本地环境"></a>第三步 配置本地环境</h2><h3 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h3><p>很简单，只需要访问<a href="https://nodejs.org/en/" target="_blank" rel="noopener">node.js官网</a>下载相应的版本安装即可。<br>安装完成后执行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ node -v</span><br><span class="line">$ npm -v</span><br></pre></td></tr></table></figure>
 <p>验证是否安装成功。</p>
 <h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p>同样，只需要访问<a href="https://git-scm.com/" target="_blank" rel="noopener">Git官网</a>下载相应的版本即可安装。</p>
 <p>安装成功后，</p>
@@ -104,37 +104,34 @@
 </li>
 </ul>
 <h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>在合适的目录下建立一个文件夹，用于存放你的博客数据，比如 <strong>d:/blog</strong>。<br>进入此文件夹所在目录，执行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo -g</span><br></pre></td></tr></table></figure>
 <p>开始安装hexo。稍等片刻，待执行完毕后，输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo -v</span><br></pre></td></tr></table></figure>
 <p>检查<strong>hexo</strong>是否安装成功。</p>
 <p>待确认安装成功后，执行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
 <p>初始化该文件夹。</p>
 <p>执行<code>hexo g</code>，生成页面。</p>
 <p>执行<code>hexo s</code>，开启服务器，正式体验Hexo。</p>
-<p>Hexo的默认端口是4000，此时在浏览器中输入：</p>
-<blockquote>
-<p><a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></p>
-</blockquote>
+<p>Hexo的默认端口是4000，此时在浏览器中输入：<br><em><a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></em></p>
 <p>我们的博客便展示在眼前了。</p>
 <h2 id="第四步-将Hexo发布到github上"><a href="#第四步-将Hexo发布到github上" class="headerlink" title="第四步 将Hexo发布到github上"></a>第四步 将Hexo发布到github上</h2><h3 id="设置user-name和user-email"><a href="#设置user-name和user-email" class="headerlink" title="设置user.name和user.email"></a>设置<strong>user.name</strong>和<strong>user.email</strong></h3><p>执行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;MingQian&quot;</span><br><span class="line">git config --global user.email &quot;553850687@qq.com&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"MingQian"</span></span><br><span class="line">$ git config --global user.email <span class="string">"553850687@qq.com"</span></span><br></pre></td></tr></table></figure>
 <h3 id="生成ssh公钥"><a href="#生成ssh公钥" class="headerlink" title="生成ssh公钥"></a>生成ssh公钥</h3><p>执行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;553850687@qq.com&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"553850687@qq.com"</span></span><br></pre></td></tr></table></figure>
 <p>需要交互时直接回车。最后得到两个文件</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">id_rsa</span><br><span class="line">id_rsa.pub</span><br></pre></td></tr></table></figure>
 <p>这两个文件默认保存在当前用户目录下的<strong>.ssh</strong>目录中。</p>
 <h3 id="在github上设置SSH-Key"><a href="#在github上设置SSH-Key" class="headerlink" title="在github上设置SSH Key"></a>在github上设置SSH Key</h3><p>登陆github，在<strong>setting</strong>页面中进入<strong>SSH and GPG keys</strong>栏目，添加新的<strong>SSH Key</strong>。即，将<strong>id_ras.pub</strong>文件中的内容添加到SSH Keys中即可。</p>
 <p>在Git bash中执行：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git -T git@github.com</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git -T git@github.com</span><br></pre></td></tr></table></figure>
 <p>如果看到<code>Hi,【你的用户名】</code>，则表明SSH配置成功。</p>
 <h3 id="配置Deployment"><a href="#配置Deployment" class="headerlink" title="配置Deployment"></a>配置Deployment</h3><p>在hexo目录下，找到<strong>_config.yml</strong>文件,配置如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:StrongRock/strongrock.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <h3 id="安装hexo的deploy拓展"><a href="#安装hexo的deploy拓展" class="headerlink" title="安装hexo的deploy拓展"></a>安装hexo的deploy拓展</h3><p>执行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <h3 id="发布到github"><a href="#发布到github" class="headerlink" title="发布到github"></a>发布到github</h3><p>执行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
 <p>此时，你就可以访问<strong> <em> [你的用户名].github.io </em> </strong>，看看效果了。</p>
 <hr>
 <p>至此，我们的博客便配置完成了。许多其他的好玩儿功能，来日边用便挖掘吧。</p>
