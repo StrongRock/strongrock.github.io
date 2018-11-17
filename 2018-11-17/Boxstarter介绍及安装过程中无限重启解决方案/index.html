@@ -117,7 +117,7 @@
 <meta property="og:description" content="背景 在安装配置hexo的过程中，需要安装node.js，结果安装的过程中计算机一遍又一遍的重启。仔细看了一下，原来每次计算机启动后都会执行一个脚本：1C:\Windows\system32&amp;gt;Call PowerShell -NoProfile -ExecutionPolicy bypass -command &quot;Import-Module &apos;C:\ProgramData\boxstarter">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://strongrock.github.io/img/boxstarter自启动项.png">
-<meta property="og:updated_time" content="2018-11-17T09:05:33.978Z">
+<meta property="og:updated_time" content="2018-11-17T09:07:22.246Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Boxstarter介绍及安装过程中无限重启问题解决方案">
 <meta name="twitter:description" content="背景 在安装配置hexo的过程中，需要安装node.js，结果安装的过程中计算机一遍又一遍的重启。仔细看了一下，原来每次计算机启动后都会执行一个脚本：1C:\Windows\system32&amp;gt;Call PowerShell -NoProfile -ExecutionPolicy bypass -command &quot;Import-Module &apos;C:\ProgramData\boxstarter">
@@ -383,7 +383,7 @@
                 
               
 
-              <time title="创建时间：2018-11-17 07:49:16 / 修改时间：17:05:33" itemprop="dateCreated datePublished" datetime="2018-11-17T07:49:16+08:00">2018-11-17</time>
+              <time title="创建时间：2018-11-17 07:49:16 / 修改时间：17:07:22" itemprop="dateCreated datePublished" datetime="2018-11-17T07:49:16+08:00">2018-11-17</time>
             
 
             
@@ -439,7 +439,7 @@
       
 
       
-        <h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><hr>
+        <h4 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h4><hr>
 <p>在安装配置hexo的过程中，需要安装node.js，结果安装的过程中计算机一遍又一遍的重启。仔细看了一下，原来每次计算机启动后都会执行一个脚本：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Windows\system32&gt;Call PowerShell -NoProfile -ExecutionPolicy bypass -<span class="built_in">command</span> <span class="string">"Import-Module 'C:\ProgramData\boxstarter\Boxstarter.Bootstrapper\boxstarter.bootstrapper.psd1';Invoke-Boxstarter -RebootOk -NoPassword:<span class="variable">$True</span>"</span></span><br></pre></td></tr></table></figure></p>
 <p>可见是一个叫做 <strong>Boxstarter</strong> 的东西在作怪。猜想应该是在安装 <strong>node.js</strong> 过程中安装的依赖包。既然这样，那就认识一下 <strong>Boxstarter</strong> ，顺道把 <strong>无限重启</strong> 的问题解决掉吧。<br><a id="more"></a></p>
 <h4 id="Boxstarter介绍"><a href="#Boxstarter介绍" class="headerlink" title="Boxstarter介绍"></a>Boxstarter介绍</h4><hr>
@@ -675,7 +675,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#背景"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Boxstarter介绍"><span class="nav-number">1.1.</span> <span class="nav-text">Boxstarter介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#功能1-重启跳回（Reboot-Resiliency）"><span class="nav-number">1.1.1.</span> <span class="nav-text">功能1 重启跳回（Reboot Resiliency）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#功能2-远程安装（Remote-Installations）"><span class="nav-number">1.1.2.</span> <span class="nav-text">功能2 远程安装（Remote Installations）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#功能3-与Hyper-V和Windows-Azure-VMs集成（Integrates）"><span class="nav-number">1.1.3.</span> <span class="nav-text">功能3 与Hyper-V和Windows Azure VMs集成（Integrates）</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#解决无限重启的问题"><span class="nav-number">1.2.</span> <span class="nav-text">解决无限重启的问题</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#背景"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Boxstarter介绍"><span class="nav-number">2.</span> <span class="nav-text">Boxstarter介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#功能1-重启跳回（Reboot-Resiliency）"><span class="nav-number">2.1.</span> <span class="nav-text">功能1 重启跳回（Reboot Resiliency）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#功能2-远程安装（Remote-Installations）"><span class="nav-number">2.2.</span> <span class="nav-text">功能2 远程安装（Remote Installations）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#功能3-与Hyper-V和Windows-Azure-VMs集成（Integrates）"><span class="nav-number">2.3.</span> <span class="nav-text">功能3 与Hyper-V和Windows Azure VMs集成（Integrates）</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#解决无限重启的问题"><span class="nav-number">3.</span> <span class="nav-text">解决无限重启的问题</span></a></li></ol></div>
             
 
           </div>
